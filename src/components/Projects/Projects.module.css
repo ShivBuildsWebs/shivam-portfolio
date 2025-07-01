@@ -1,0 +1,112 @@
+.projectsSection {
+  padding: 100px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.projectsTitle {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+}
+
+.projectCard {
+  background: #16222a;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 0 18px rgba(0, 198, 255, 0.25);
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeUp 0.8s forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:nth-child(1) { animation-delay: 0.1s; }
+.projectCard:nth-child(2) { animation-delay: 0.2s; }
+.projectCard:nth-child(3) { animation-delay: 0.3s; }
+.projectCard:nth-child(4) { animation-delay: 0.4s; }
+.projectCard:nth-child(5) { animation-delay: 0.5s; }
+.projectCard:nth-child(6) { animation-delay: 0.6s; }
+
+.projectCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 28px rgba(0, 198, 255, 0.45);
+}
+
+.projectCard img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.projectContent {
+  padding: 28px;
+}
+
+.projectContent h3 {
+  margin: 0 0 14px;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.projectContent p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.projectContent button {
+  background: #00c6ff;
+  border: none;
+  color: white;
+  padding: 12px 22px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.projectContent button:hover {
+  background: #0072ff;
+  transform: scale(1.05);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .projectsSection {
+    padding: 60px 15px;
+  }
+
+  .projectCard img {
+    height: 220px;
+  }
+
+  .projectContent {
+    padding: 20px;
+  }
+
+  .projectContent h3 {
+    font-size: 1.5rem;
+  }
+
+  .projectContent p {
+    font-size: 1rem;
+  }
+}

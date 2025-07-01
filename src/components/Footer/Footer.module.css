@@ -1,0 +1,28 @@
+.footer {
+  background: #0f2027;
+  padding: 30px 20px;
+  text-align: center;
+  color: #aaa;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.socials a {
+  color: #00c6ff;
+  font-size: 1.8rem;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.socials a:hover {
+  color: #0072ff;
+  transform: scale(1.2);
+}
+
+.copy {
+  font-size: 0.9rem;
+}

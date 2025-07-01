@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: fadeIn 1s ease forwards;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+      animation: fadeIn 1s ease forwards;
+    }
+    a button {
+      margin-top: 2rem;
+      padding: 0.75rem 2rem;
+      background: #ff6b6b;
+      color: #fff;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+      animation: fadeIn 1s ease forwards;
+    }
+    a button:hover {
+      background: #ff8787;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Thank You!</h1>
+  <p>Your message has been sent successfully.</p>
+  <p>I’ll get back to you as soon as possible.</p>
+  <a href="/"><button>Return to Home</button></a>
+</body>
+</html>

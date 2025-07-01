@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #0f2027;
+  color: white;
+  position: relative;
+}
+
+/* Fix stacking context */
+#root {
+  position: relative;
+  z-index: 0;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Wave containers */
+.waveContainer {
+  position: fixed;
+  width: 200%;
+  height: 150px;
+  overflow: hidden;
+  z-index: -10;
+  left: 0;
+}
+
+.waveContainer.bottom {
+  bottom: 0;
+}
+
+.waveContainer.top {
+  top: 0;
+}
+
+/* Each wave */
+.wave {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background: url('/wave.svg') repeat-x;
+  background-size: cover;
+  animation: scrollWave 10s linear infinite;
+}
+
+/* Flipped top wave with proper animation */
+.wave.flipped {
+  animation: scrollWaveFlipped 10s linear infinite;
+}
+
+/* Bottom wave animation */
+@keyframes scrollWave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Top wave animation with vertical flip */
+@keyframes scrollWaveFlipped {
+  0% {
+    transform: scaleY(-1) translateX(0);
+  }
+  100% {
+    transform: scaleY(-1) translateX(-100%);
+  }
+}

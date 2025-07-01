@@ -1,0 +1,39 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1 1 400px;
+}
+
+.text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #00c6ff;
+}
+
+.text p {
+  font-size: 1.5rem;
+  color: #cfd8dc;
+  line-height: 1.6;
+}
+
+.image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
