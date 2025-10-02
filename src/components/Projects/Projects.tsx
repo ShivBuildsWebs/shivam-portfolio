@@ -7,7 +7,7 @@ const projects = [
     title: "Himalyan Trails",
     description:
       "A full-stack booking platform for Himalyan Trails, built with Next.js and Supabase. Features include dynamic trek pages, a backend for content management, and automated email responses via Resend. The project heavily utilized AI-assisted development for advanced SEO and rapid implementation.",
-    image: "/Techsite.png",
+    image: "/HimalyanTrails.png",
     link: "https://www.himalyantrails.com/",
   },
   {
@@ -30,13 +30,6 @@ const projects = [
       "I developed this website entirely with Bootstrap, using its components, grid system, and utilities to build a clean, responsive design quickly and efficiently. The project demonstrates how powerful Bootstrap can be for creating professional layouts without custom CSS.",
     image: "/Tindog.png",
     link: "https://shivbuildswebs.github.io/My-Portfolio/Tindog/index.html",
-  },
-  {
-    title: "Form",
-    description:
-      "I built this form using HTML and CSS, featuring fields for user input, including a secure password entry. The project focuses on clean design, user-friendly layout, and basic form validation to improve the user experience.",
-    image: "/GridForm.png",
-    link: "https://shivbuildswebs.github.io/My-Portfolio/Form/index.html",
   },
   {
     title: "Dice Game",
