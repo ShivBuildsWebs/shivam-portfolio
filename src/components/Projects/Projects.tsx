@@ -4,6 +4,13 @@ import DynamicLoader from "../../DynamicLoader";
 
 const projects = [
   {
+    title: "Himalyan Trails",
+    description:
+      "A full-stack booking platform for Himalyan Trails, built with Next.js and Supabase. Features include dynamic trek pages, a backend for content management, and automated email responses via Resend. The project heavily utilized AI-assisted development for advanced SEO and rapid implementation.",
+    image: "/Techsite.png",
+    link: "https://www.himalyantrails.com/",
+  },
+  {
     title: "Tech Site",
     description:
       "I built this website using HTML and CSS, focusing on modern layouts with CSS Grid and Flexbox. The project showcases clean design, responsive structure, and attention to detail in styling.",
